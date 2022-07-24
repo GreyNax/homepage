@@ -26,11 +26,11 @@ nav-menu:
   permalink: blog
 
 # use false to turn off any social media links
-twitter: https://twitter.com/
-facebook: https://facebook.com/
-instagram: https://instagram.com/
-github: https://github.com/
-linkedin: https://linkedin.com/
+twitter: https://twitter.cdhagmann.com/
+facebook: https://facebook.cdhagmann.com/
+instagram: false
+github: https://github.cdhagmann.com/
+linkedin: https://linkedin.cdhagmann.com/
 medium: false
 google-scholar: false
 email: me@cdhagmann.com
