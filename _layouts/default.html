@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
-
+<html lang="{{ site.lang | default: " en-US" }}" class="h-full">
 <head>
-
-  <!-- google analytics -->
-  {% if site.google-analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
-
   <!-- Jekyll SEO plugin -->
   {% seo %}
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+
+  <!-- Title -->
   <title>{{ site.title }}</title>
 
   <!-- TailwindCSS and Inter Font-->
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <!-- <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/tailwind.css">
+  <link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{site.baseurl}}/assets/img/favicon.svg">
 
   <!-- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  
+  <script src="https://kit.fontawesome.com/021dd30f1b.js" crossorigin="anonymous"></script>
+
     <!-- highlight.js -->
    <link rel="stylesheet"
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark-dimmed.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
-  
+
   <!-- MathJax -->
   <script>
     MathJax = {
@@ -40,11 +38,21 @@
   </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
- </head>
 
-<body class="font-sans mx-auto max-w-prose">
-  <div class="pt-12 pb-4">
-    {{ content }}
+  <script src="{{site.baseurl}}/assets/js/index.js" defer="true"></script>
+</head>
+
+<body class="bg-neutral-50 dark:bg-slate-800 flex h-full">
+  <div class="flex flex-col w-full">
+    {% if site.show-nav-menu %}
+      {% include nav.html%}
+    {% endif %}
+
+    <main id="content" role="main" class="max-w-[50rem] mx-auto">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
   </div>
 </body>
 
@@ -58,7 +66,7 @@
     }
   })();
 
-  /* Function for opning navbar on mobile */
+  /* Function for opening navbar on mobile */
   function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
@@ -76,7 +84,7 @@
   /* Function for show/hide table of content */
   function toggleTOC() {
     var toc = document.getElementById('toc');
-        if (toc.style.display == "block"){ // if toc hidden, display it 
+        if (toc.style.display == "block"){ // if toc hidden, display it
             toc.style.display = "none";
         }
         else{ // if toc displayed, hidden it

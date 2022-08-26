@@ -1,29 +1,31 @@
 # change the followings to match your Github username and repo name
-baseurl: "/tailpages" # the name of your github repo
-url: "https://cdhagmann.com" # the url of your github pages
+baseurl: '/' # the name of your github repo
+url: 'https://cdhagmann.dev' # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "Tailpages: Tailwind + Github Pages"
-description: A Github Pages (Jekyll) template based on TailwindCSS
+title: 'Christopher Hagmann: Rails Developer'
+description: A Github Pages (Jekyll) Site based on Tailpages
 
 # color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+theme-color: crimson # indigo|yellow|pink|green|stone|
 
 # homepage information
 author: Chris Hagmann
 author-bio: Rails Developer # change to false to hide
-author-image: 4440901.png  # file must be in the /assets/img/ folder
+author-image: me.png # file must be in the /assets/img/ folder
 
 # navigation menu
 show-nav-menu: true
 
 nav-menu:
-- text: About
-  permalink: about
-- text: Projects
-  permalink: bitcoin
-- text: Blog
-  permalink: blog
+  - text: About
+    permalink: about
+  - text: Projects
+    permalink: bitcoin
+  - text: Blog
+    permalink: blog
+  - text: History
+    permalink: history
 
 # use false to turn off any social media links
 twitter: https://twitter.cdhagmann.com/
@@ -34,14 +36,15 @@ linkedin: https://linkedin.cdhagmann.com/
 medium: false
 google-scholar: false
 email: mailto:me@cdhagmann.com
+resume: cdhagmann_resume.pdf # assumes assets/pdf/
 
 # footer information
-footer-msg: "Powered by Tailpages"
-footer-msg-link: https://github.com/harrywang/tailpages
+footer-msg: ''
+footer-msg-link: ''
 
 # google analytics
 google-analytics: false
 
 # jekyll plugins - no need to change
 plugins:
-    - jekyll-seo-tag
+  - jekyll-seo-tag

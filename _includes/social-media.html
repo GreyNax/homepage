@@ -1,87 +1,95 @@
 <section>
   <div class="flex flex-wrap text-center">
-    <div class="w-full pt-4">
+    <div class="w-full">
       <div>
         {% if site.twitter %}
-        <a href="{{site.twitter}}" target="_blank">
-          <button
-            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-twitter"></i>
-          </button>
-        </a>
+          <div class="hs-tooltip inline-block">
+            <a href="{{site.twitter}}" class="hs-tooltip-toggle dark:text-gray-200 text-slate-800 p-3" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 mb-[-2] px-2 font-medium text-xs text-{{site.theme-color}}-500 dark:text-{{site.theme-color}}-300 bg-neutral-50 dark:bg-slate-800" role="tooltip">
+                Twitter
+              </span>
+            </a>
+          </div>
         {% endif %}
 
         {% if site.facebook %}
-        <a href="{{site.facebook}}" target="_blank">
-          <button
-            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-facebook"></i>
-          </button>
-        </a>
+          <div class="hs-tooltip inline-block">
+            <a href="{{site.facebook}}" class="hs-tooltip-toggle dark:text-gray-200 text-slate-800 p-3" target="_blank">
+              <i class="fab fa-facebook"></i>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 mb-[-2] px-2 font-medium text-xs text-{{site.theme-color}}-500 dark:text-{{site.theme-color}}-300 bg-neutral-50 dark:bg-slate-800" role="tooltip">
+                Facebook
+              </span>
+            </a>
+          </div>
         {% endif %}
 
         {% if site.instagram %}
-        <a href="{{site.instagram}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-instagram"></i>
-          </button>
-        </a>
+          <div class="hs-tooltip inline-block">
+            <a href="{{site.instagram}}" class="hs-tooltip-toggle dark:text-gray-200 text-slate-800 p-3" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 mb-[-2] px-2 font-medium text-xs text-{{site.theme-color}}-500 dark:text-{{site.theme-color}}-300 bg-neutral-50 dark:bg-slate-800" role="tooltip">
+                Instagram
+              </span>
+            </a>
+          </div>
         {% endif %}
 
         {% if site.github %}
-        <a href="{{site.github}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-github"></i>
-          </button>
-        </a>
+          <div class="hs-tooltip inline-block">
+            <a href="{{site.github}}" class="hs-tooltip-toggle dark:text-gray-200 text-slate-800 p-3" target="_blank">
+              <i class="fab fa-github"></i>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 mb-[-2] px-2 font-medium text-xs text-{{site.theme-color}}-500 dark:text-{{site.theme-color}}-300 bg-neutral-50 dark:bg-slate-800" role="tooltip">
+                GitHub
+              </span>
+            </a>
+          </div>
         {% endif %}
 
         {% if site.linkedin %}
-        <a href="{{site.linkedin}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-linkedin"></i>
-          </button>
-        </a>
+          <div class="hs-tooltip inline-block">
+            <a href="{{site.linkedin}}" class="hs-tooltip-toggle dark:text-gray-200 text-slate-800 p-3" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 mb-[-2] px-2 font-medium text-xs text-{{site.theme-color}}-500 dark:text-{{site.theme-color}}-300 bg-neutral-50 dark:bg-slate-800" role="tooltip">
+                LinkedIn
+              </span>
+            </a>
+          </div>
         {% endif %}
 
         {% if site.medium %}
-        <a href="{{site.medium}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fab fa-medium"></i>
-          </button>
+        <a href="{{site.medium}}" class="dark:text-gray-200 text-slate-800 p-3" target="_blank">
+          <i class="fab fa-medium"></i>
         </a>
         {% endif %}
 
         {% if site.google-scholar %}
-        <a href="{{site.google-scholar}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fas fa-graduation-cap"></i>
-          </button>
+        <a href="{{site.google-scholar}}" class="dark:text-gray-200 text-slate-800 p-3" target="_blank">
+          <i class="fas fa-graduation-cap"></i>
         </a>
         {% endif %}
 
         {% if site.email %}
-        <a href="{{site.email}}" target="_blank">
-          <button
-            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button">
-            <i class="fas fa-paper-plane"></i>
-          </button>
-        </a>
+          <div class="hs-tooltip inline-block">
+            <a href="{{site.email}}" class="hs-tooltip-toggle dark:text-gray-200 text-slate-800 p-3" target="_blank">
+              <i class="fas fa-paper-plane"></i>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 mb-[-2] px-2 font-medium text-xs text-{{site.theme-color}}-500 dark:text-{{site.theme-color}}-300 bg-neutral-50 dark:bg-slate-800" role="tooltip">
+                Contact Me
+              </span>
+            </a>
+          </div>
         {% endif %}
 
+        {% if site.resume %}
+          <div class="hs-tooltip inline-block">
+            <a href="{{site.baseurl}}/assets/pdf/{{site.resume}}" class="hs-tooltip-toggle dark:text-gray-200 text-slate-800 p-3" target="_blank">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 mb-[-2] px-2 font-medium text-xs text-{{site.theme-color}}-500 dark:text-{{site.theme-color}}-300 bg-neutral-50 dark:bg-slate-800" role="tooltip">
+                Download CV
+              </span>
+            </a>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
