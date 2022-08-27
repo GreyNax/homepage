@@ -2061,7 +2061,7 @@
   // index.js
   var import_hs_ui = __toESM(require_hs_ui_bundle());
 
-  // node_modules/preline/dist/hs.theme-appearance.js
+  // vendor/preline/hs.theme-appearance.js
   var HSThemeAppearance = {
     init() {
       const defaultTheme = "default";

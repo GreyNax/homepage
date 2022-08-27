@@ -1,0 +1,9 @@
+{
+  "entry": "./index.js",
+  "bundle": true,
+  "outfile": "./assets/js/index.js",
+  "loader": {
+    ".png": "file",
+    ".svg": "file"
+  }
+}

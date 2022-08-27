@@ -253,6 +253,11 @@ esbuild-android-arm64@0.14.49:
   resolved "https://registry.yarnpkg.com/esbuild-android-arm64/-/esbuild-android-arm64-0.14.49.tgz#9861b1f7e57d1dd1f23eeef6198561c5f34b51f6"
   integrity sha512-g2HGr/hjOXCgSsvQZ1nK4nW/ei8JUx04Li74qub9qWrStlysaVmadRyTVuW32FGIpLQyc5sUjjZopj49eGGM2g==
 
+esbuild-config@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/esbuild-config/-/esbuild-config-0.2.0.tgz#e01165d90625cf2917d4d1249f6bae23301f636e"
+  integrity sha512-sCqk1pgOLpB50RvWcQ7qPYg8sO+wlTupz50vkgr5iHe5kdHO5A8pcBt8hUKlR5u4llf86igGhXnaosSTpeA9Nw==
+
 esbuild-darwin-64@0.14.49:
   version "0.14.49"
   resolved "https://registry.yarnpkg.com/esbuild-darwin-64/-/esbuild-darwin-64-0.14.49.tgz#fd30a5ebe28704a3a117126c60f98096c067c8d1"
