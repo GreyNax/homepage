@@ -25,6 +25,8 @@ permalink: about
     </div>
   </div>
 
+  <iframe src="https://drive.google.com/file/d/1xeaJpGDJ0eGJedXced0yMuqaoejh2sgN/preview" width="640" height="480" allow="autoplay"></iframe>
+  
   <div class="hs-accordion" id="hs-basic-heading-two">
     <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-600 dark:text-gray-200 dark:hover:text-gray-400" aria-controls="hs-basic-collapse-two">
       <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
